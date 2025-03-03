@@ -9,6 +9,17 @@ body .bottom_bar{
     margin-bottom: auto;
 }
 
+.eagle_text{
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 0px;
+    margin-bottom: auto;
+    height: max-content;
+    line-height: 17px;
+    margin-left: 3px;
+    color: gray;
+}
+
 .action_grid{
     cursor: pointer;
     margin-left: 10px;
@@ -65,7 +76,6 @@ body .bottom_bar{
     top: 68.1%;
     left: 18%;
     width: 20%;
-    z-index: 1:
 }
 
 .eagle_video{

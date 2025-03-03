@@ -21,7 +21,8 @@ function clearClassList(){
 }
 
 var time = document.getElementById("time");
-var options = { year: 'numeric', month: 'numeric', day: 'numeric' };
+var options = { year: 'numeric', month: 'numeric', day: '2-digit' };
+var optionsTime = { second: 'numeric', minute: 'numeric', hour: '2-digit' };
 
 if (localStorage.getItem("update") == null){
   localStorage.setItem("update", "24.12.2024")
@@ -47,8 +48,8 @@ function delay(time) {
 
 setClock();
 function setClock(){
-    date = new Date()
-    time.innerHTML = "Czas: " + date.toLocaleTimeString() + " " + date.toLocaleDateString("pl-PL", options);    
+    date = new Date();
+    time.innerHTML = "Czas: " + date.toLocaleTimeString("pl-PL", optionsTime) + " " + date.toLocaleDateString("pl-PL", options);    
     delay(1000).then(() => {
         setClock();
     })
