@@ -10,13 +10,13 @@ body .bottom_bar{
 }
 
 .eagle_text{
-    font-size: 15px;
-    font-weight: 300;
+    font-size: 14px;
+    font-weight: 200;
     margin-top: 0px;
     margin-bottom: auto;
     height: max-content;
     line-height: 17px;
-    margin-left: 3px;
+    margin-left: 1px;
     color: gray;
 }
 
